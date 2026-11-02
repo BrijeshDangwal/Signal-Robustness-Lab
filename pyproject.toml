@@ -1,0 +1,18 @@
+[project]
+name = "signal-robustness-lab"
+version = "0.1.0"
+description = "Do simple trading signals survive honest statistical testing?"
+requires-python = ">=3.11"
+authors = [{ name = "Brijesh Dangwal" }]
+license = { text = "MIT" }
+
+[tool.ruff]
+line-length = 130
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+filterwarnings = ["ignore::FutureWarning"]

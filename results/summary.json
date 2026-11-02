@@ -1,0 +1,298 @@
+{
+  "sp500": {
+    "market": "S&P 500",
+    "open_prices_valid": false,
+    "open_equals_prev_close_by_year": {
+      "1999": 0.964,
+      "2000": 0.96,
+      "2001": 0.948,
+      "2002": 0.948,
+      "2003": 0.98,
+      "2004": 0.976,
+      "2005": 0.96,
+      "2006": 0.426,
+      "2007": 0.155,
+      "2008": 0.012,
+      "2009": 0.016,
+      "2010": 0.012,
+      "2011": 0.091,
+      "2012": 0.252,
+      "2013": 0.262,
+      "2014": 0.004,
+      "2015": 0.004,
+      "2016": 0.0,
+      "2017": 0.0,
+      "2018": 0.0
+    },
+    "n_signals": 18,
+    "stylised_facts_1999_2018": {
+      "n_days": 5030,
+      "ann_return": 0.05399812363285518,
+      "ann_vol": 0.19098207141371265,
+      "skew": -0.020482927649562513,
+      "excess_kurtosis": 8.336117913791677,
+      "jarque_bera_p": 0.0,
+      "ljung_box_returns_p_lag10": 8.232676714402521e-09,
+      "ljung_box_squared_p_lag10": 0.0,
+      "arch_lm_p_lag10": 2.1306375166104956e-267,
+      "days_beyond_4sd": 29,
+      "expected_beyond_4sd_if_normal": 0.3186126928411858
+    },
+    "benchmark": {
+      "in_sample": {
+        "ann_return": 0.009767593377642929,
+        "ann_vol": 0.21879593907584427,
+        "sharpe": 0.04464248019821361
+      },
+      "out_of_sample": {
+        "ann_return": 0.09706525244601952,
+        "ann_vol": 0.14582340927221527,
+        "sharpe": 0.6656355994586807
+      }
+    },
+    "spa": {
+      "in_sample": {
+        "vs_buy_and_hold": {
+          "lower": 0.0345,
+          "consistent": 0.0395,
+          "upper": 0.0395,
+          "t_stat": 2.624434568751697,
+          "best_model": "reversal_1d"
+        },
+        "vs_cash": {
+          "lower": 0.0005,
+          "consistent": 0.0015,
+          "upper": 0.0015,
+          "t_stat": 3.7531694548423915,
+          "best_model": "reversal_1d"
+        },
+        "arch_package_unstudentized": {
+          "vs_buy_and_hold": {
+            "lower": 0.031,
+            "consistent": 0.04,
+            "upper": 0.04
+          },
+          "vs_cash": {
+            "lower": 0.0005,
+            "consistent": 0.001,
+            "upper": 0.001
+          }
+        }
+      },
+      "out_of_sample": {
+        "vs_buy_and_hold": {
+          "lower": 0.4995,
+          "consistent": 0.92,
+          "upper": 0.9385,
+          "t_stat": 0.0,
+          "best_model": "reversal_5d"
+        },
+        "vs_cash": {
+          "lower": 0.0795,
+          "consistent": 0.106,
+          "upper": 0.111,
+          "t_stat": 2.4240584530790006,
+          "best_model": "long_Tue"
+        },
+        "arch_package_unstudentized": {
+          "vs_buy_and_hold": {
+            "lower": 0.738,
+            "consistent": 0.9855,
+            "upper": 0.99
+          },
+          "vs_cash": {
+            "lower": 0.35,
+            "consistent": 0.4485,
+            "upper": 0.467
+          }
+        }
+      }
+    },
+    "counts": {
+      "in_sample": {
+        "significant_raw": 2,
+        "significant_bh": 2,
+        "significant_bonferroni": 2,
+        "positive_sharpe": 11
+      },
+      "out_of_sample": {
+        "significant_raw": 2,
+        "significant_bh": 0,
+        "significant_bonferroni": 0,
+        "positive_sharpe": 10
+      }
+    },
+    "selection": {
+      "spearman_is_vs_oos_sharpe": 0.6264189886480908,
+      "spearman_p": 0.005410032721793995,
+      "best_in_sample_signal": "reversal_1d",
+      "best_in_sample_sharpe": 1.0710999588290826,
+      "best_signal_oos_sharpe": 0.08224936438726713,
+      "best_signal_oos_rank": 10,
+      "best_signal_oos_p": 0.7994888949419099,
+      "bh_significant_in_sample": [
+        "reversal_1d",
+        "reversal_2d"
+      ],
+      "survived_out_of_sample": [],
+      "same_sign_share": 0.8333333333333334
+    }
+  },
+  "nasdaq": {
+    "market": "NASDAQ Composite",
+    "open_prices_valid": true,
+    "open_equals_prev_close_by_year": {
+      "1999": 0.008,
+      "2000": 0.0,
+      "2001": 0.004,
+      "2002": 0.0,
+      "2003": 0.0,
+      "2004": 0.0,
+      "2005": 0.0,
+      "2006": 0.008,
+      "2007": 0.004,
+      "2008": 0.004,
+      "2009": 0.0,
+      "2010": 0.0,
+      "2011": 0.004,
+      "2012": 0.0,
+      "2013": 0.0,
+      "2014": 0.0,
+      "2015": 0.0,
+      "2016": 0.0,
+      "2017": 0.0,
+      "2018": 0.0
+    },
+    "n_signals": 20,
+    "stylised_facts_1999_2018": {
+      "n_days": 5030,
+      "ann_return": 0.08711434076369431,
+      "ann_vol": 0.25308098889831787,
+      "skew": 0.1651292753599181,
+      "excess_kurtosis": 5.789129981762972,
+      "jarque_bera_p": 0.0,
+      "ljung_box_returns_p_lag10": 0.000549696979314524,
+      "ljung_box_squared_p_lag10": 0.0,
+      "arch_lm_p_lag10": 6.429790465819213e-202,
+      "days_beyond_4sd": 29,
+      "expected_beyond_4sd_if_normal": 0.3186126928411858
+    },
+    "benchmark": {
+      "in_sample": {
+        "ann_return": 0.005365926386622753,
+        "ann_vol": 0.29812989732579437,
+        "sharpe": 0.017998618839488296
+      },
+      "out_of_sample": {
+        "ann_return": 0.12909702100440987,
+        "ann_vol": 0.16863028405055996,
+        "sharpe": 0.7655624950836415
+      }
+    },
+    "spa": {
+      "in_sample": {
+        "vs_buy_and_hold": {
+          "lower": 0.139,
+          "consistent": 0.152,
+          "upper": 0.162,
+          "t_stat": 1.93673912294098,
+          "best_model": "reversal_2d"
+        },
+        "vs_cash": {
+          "lower": 0.0455,
+          "consistent": 0.059,
+          "upper": 0.059,
+          "t_stat": 2.690911732434712,
+          "best_model": "reversal_2d"
+        },
+        "arch_package_unstudentized": {
+          "vs_buy_and_hold": {
+            "lower": 0.1725,
+            "consistent": 0.18,
+            "upper": 0.18
+          },
+          "vs_cash": {
+            "lower": 0.0355,
+            "consistent": 0.0395,
+            "upper": 0.0395
+          }
+        }
+      },
+      "out_of_sample": {
+        "vs_buy_and_hold": {
+          "lower": 0.515,
+          "consistent": 0.881,
+          "upper": 0.9555,
+          "t_stat": 0.0,
+          "best_model": "momentum_126d"
+        },
+        "vs_cash": {
+          "lower": 0.006,
+          "consistent": 0.0095,
+          "upper": 0.0095,
+          "t_stat": 3.1920405525868696,
+          "best_model": "overnight_only"
+        },
+        "arch_package_unstudentized": {
+          "vs_buy_and_hold": {
+            "lower": 0.6685,
+            "consistent": 0.9415,
+            "upper": 0.9905
+          },
+          "vs_cash": {
+            "lower": 0.1215,
+            "consistent": 0.1805,
+            "upper": 0.1805
+          }
+        }
+      }
+    },
+    "counts": {
+      "in_sample": {
+        "significant_raw": 2,
+        "significant_bh": 0,
+        "significant_bonferroni": 0,
+        "positive_sharpe": 14
+      },
+      "out_of_sample": {
+        "significant_raw": 3,
+        "significant_bh": 2,
+        "significant_bonferroni": 1,
+        "positive_sharpe": 12
+      }
+    },
+    "selection": {
+      "spearman_is_vs_oos_sharpe": 0.24060150375939846,
+      "spearman_p": 0.3068610916782757,
+      "best_in_sample_signal": "reversal_2d",
+      "best_in_sample_sharpe": 0.7168664619422661,
+      "best_signal_oos_sharpe": -0.23038727491165673,
+      "best_signal_oos_rank": 17,
+      "best_signal_oos_p": 0.5128085356669003,
+      "bh_significant_in_sample": [],
+      "survived_out_of_sample": [],
+      "same_sign_share": 0.6
+    }
+  },
+  "settings": {
+    "periods": {
+      "in_sample": [
+        "2000-01-01",
+        "2010-12-31"
+      ],
+      "out_of_sample": [
+        "2011-01-01",
+        "2018-12-31"
+      ]
+    },
+    "costs_bps": [
+      0,
+      1,
+      2,
+      5,
+      10
+    ],
+    "bootstrap_reps": 2000,
+    "seed": 0
+  }
+}
